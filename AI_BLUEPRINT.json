@@ -1,0 +1,149 @@
+{
+  "mode": "ai",
+  "project_title": "Support Ticket Resolver",
+  "short_description": "AI-powered support ticket resolution system",
+  "domain_summary": "{'topic': 'Customer Support', 'description': 'Automate support ticket resolution using AI and machine learning', 'practical_portfolio_value': 'Improved customer satisfaction, reduced resolution time, and increased efficiency'}",
+  "user_persona": "Support Agent: A customer support agent who handles incoming tickets and resolves issues",
+  "architecture_notes": [
+    "Use a cloud-based ticketing system for scalability and reliability",
+    "Train the AI model on a large dataset of customer support interactions",
+    "Integrate with a knowledge base for accurate and up-to-date information",
+    "Implement a chat interface for user-friendly interaction"
+  ],
+  "backend_modules": [
+    "Ticketing System: Handles ticket submission, routing, and status updates",
+    "AI Model: Generates responses to user queries using machine learning algorithms",
+    "Knowledge Base: Provides accurate and up-to-date information for AI model training"
+  ],
+  "frontend_features": [
+    "Chat Interface: User-friendly interface for interacting with the AI model"
+  ],
+  "data_sources": [
+    "Customer Support Database: Stores customer support interactions and ticket information",
+    "Knowledge Base API: Provides access to accurate and up-to-date information"
+  ],
+  "testing_strategy": [
+    "Unit testing for individual components",
+    "Integration testing for end-to-end functionality",
+    "UI testing for user interface and experience"
+  ],
+  "starter_questions": [
+    "What is the primary goal of the Support Ticket Resolver system?",
+    "How will the AI model be trained and updated?",
+    "What is the expected user experience for the chat interface?"
+  ],
+  "workflow_steps": [
+    "User submits ticket",
+    "Ticketing System routes to AI Model",
+    "AI Model generates response",
+    "Response is displayed to user through Chat Interface"
+  ],
+  "business_rules": [
+    "Tickets must be resolved within 24 hours",
+    "AI model responses must be accurate and up-to-date",
+    "User feedback is collected and used to improve AI model performance"
+  ],
+  "sample_documents": [
+    {
+      "filename": "ticket_submission.json",
+      "content": "{'description': \"Customer's laptop is not turning on\", 'priority': 'High'}"
+    },
+    {
+      "filename": "ai_response.json",
+      "content": "{'response': 'Try restarting your laptop. If the issue persists, contact our support team for further assistance.'}"
+    }
+  ],
+  "tool_catalog": [
+    {
+      "name": "FastAPI",
+      "description": "Python web framework for building the ticketing system and AI model"
+    },
+    {
+      "name": "React",
+      "description": "Frontend framework for building the chat interface"
+    },
+    {
+      "name": "Docker",
+      "description": "Containerization platform for deploying the system"
+    }
+  ],
+  "agent_plan": [
+    {
+      "name": "Architecture Agent",
+      "role": "Define app boundaries, data flow, runtime stack, and integration points.",
+      "outputs": [
+        "Use a cloud-based ticketing system for scalability and reliability",
+        "Train the AI model on a large dataset of customer support interactions",
+        "Integrate with a knowledge base for accurate and up-to-date information",
+        "Implement a chat interface for user-friendly interaction"
+      ]
+    },
+    {
+      "name": "Backend Agent",
+      "role": "Design FastAPI modules, service contracts, validation, and error handling.",
+      "outputs": [
+        "Ticketing System: Handles ticket submission, routing, and status updates",
+        "AI Model: Generates responses to user queries using machine learning algorithms",
+        "Knowledge Base: Provides accurate and up-to-date information for AI model training"
+      ]
+    },
+    {
+      "name": "Frontend Agent",
+      "role": "Design React screens, state flow, controls, and user feedback states.",
+      "outputs": [
+        "Chat Interface: User-friendly interface for interacting with the AI model"
+      ]
+    },
+    {
+      "name": "Database Agent",
+      "role": "Design persistence models, sample data, indexes, and audit records.",
+      "outputs": [
+        "Run history",
+        "Source document metadata",
+        "Generated workflow audit records"
+      ]
+    },
+    {
+      "name": "Testing Agent",
+      "role": "Define contract tests, smoke tests, and generated project validation.",
+      "outputs": [
+        "Unit testing for individual components",
+        "Integration testing for end-to-end functionality",
+        "UI testing for user interface and experience"
+      ]
+    },
+    {
+      "name": "DevOps Agent",
+      "role": "Define environment variables, Docker workflow, and repository packaging.",
+      "outputs": [
+        "Docker-ready project",
+        "Environment sample file",
+        "GitHub repository upload"
+      ]
+    },
+    {
+      "name": "Reviewer Agent",
+      "role": "Review the generated plan for completeness, security, and portfolio quality.",
+      "outputs": [
+        "User submits ticket",
+        "Ticketing System routes to AI Model",
+        "AI Model generates response",
+        "Response is displayed to user through Chat Interface"
+      ]
+    }
+  ],
+  "model_provider": "groq",
+  "model_name": "llama-3.1-8b-instant",
+  "fallback_reason": "Gemini limit reached. Automatically switched to Groq.",
+  "architecture": "Support Ticket Resolver",
+  "architecture_template_id": 13,
+  "architecture_template_path": "templates/agentic-rag/support-ticket-resolver",
+  "architecture_description": "Support Ticket Resolver for ticket diagnosis and resolution.",
+  "validation_pipeline": [
+    "pytest",
+    "npm install",
+    "npm run build",
+    "docker compose config",
+    "docker compose build"
+  ]
+}
