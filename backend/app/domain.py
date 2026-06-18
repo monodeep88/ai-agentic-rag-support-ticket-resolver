@@ -1,0 +1,6 @@
+DOMAIN_SUMMARY = "{'topic': 'Customer Support', 'description': 'Automate support ticket resolution using AI and machine learning', 'practical_portfolio_value': 'Improved customer satisfaction, reduced resolution time, and increased efficiency'}"
+USER_PERSONA = 'Support Agent: A customer support agent who handles incoming tickets and resolves issues'
+STARTER_QUESTIONS = ['What is the primary goal of the Support Ticket Resolver system?', 'How will the AI model be trained and updated?', 'What is the expected user experience for the chat interface?']
+WORKFLOW_STEPS = ['User submits ticket', 'Ticketing System routes to AI Model', 'AI Model generates response', 'Response is displayed to user through Chat Interface']
+BUSINESS_RULES = ['Tickets must be resolved within 24 hours', 'AI model responses must be accurate and up-to-date', 'User feedback is collected and used to improve AI model performance']
+TOOL_CATALOG = [{'name': 'fastapi', 'description': 'Python web framework for building the ticketing system and AI model'}, {'name': 'react', 'description': 'Frontend framework for building the chat interface'}, {'name': 'docker', 'description': 'Containerization platform for deploying the system'}]
